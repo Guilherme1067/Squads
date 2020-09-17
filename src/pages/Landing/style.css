@@ -9,8 +9,12 @@ button {
     font-size: 40px;
     transition: 1s;
     color: white;
+    text-decoration: none;
+    
 }
-
+Link{
+    text-decoration: none;
+}
 button:hover {
 background:#274242;
 color: #fdffff;
