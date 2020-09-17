@@ -1,0 +1,62 @@
+ul {
+    list-style: none;
+}
+
+p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    transition: 1s;
+    color: #2F4F4F;
+}
+
+p:hover {
+    transform: rotate(5deg);
+    cursor: default;
+    box-shadow: 10px 10px 10px 1px #2F4F4F;
+}
+
+
+.header-nav-description {
+    margin-right: 10px;
+}
+
+.header nav {
+    display: flex;
+    background: #74ffd1;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav input {
+    background: transparent;
+    border-radius: 13px;
+    width: 10vw;
+    height: 3.4vh;
+}
+
+.header-nav button {
+    background: #5F9EA0;
+    width: 9.0rem;
+    height: 2.0rem;
+    cursor: pointer;
+    border-radius: 13px;
+    border-color: #5F9EA0;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.4s
+}
+
+.header-nav button:hover {
+    color: white;
+    background: #2F4F4F;
+}
+
+.playIcon {
+    width: 1.2vw;
+    height: 2.8vh;
+    color: #FF4500
+}

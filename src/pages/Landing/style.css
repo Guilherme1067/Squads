@@ -1,0 +1,21 @@
+button {
+    background:#2F4F4F;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    height: 90vh;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    transition: 1s;
+    color: white;
+}
+
+button:hover {
+background:#274242;
+color: #fdffff;
+}
+
+.buttons {
+    display:flex;
+}
