@@ -27,6 +27,7 @@ p:hover {
     height: 10vh;
     align-items: center;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
 }
 
 .header-nav input {
@@ -53,6 +54,10 @@ p:hover {
 .header-nav button:hover {
     color: white;
     background: #2F4F4F;
+}
+.header-menu{
+    display:flex;
+    /* justify-content: space-around; */
 }
 
 .playIcon {

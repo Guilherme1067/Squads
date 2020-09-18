@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import albumService from '../../services/album';
 
 import Header from '../../components/Header'
+
+import './style.css';
+import album from '../../services/album';
 
 class Albums extends Component {
 
@@ -11,20 +14,26 @@ class Albums extends Component {
                 name: "",
                 artist: "",
                 url: "",
-                img: ""
+                image: "",
             },
         ],
     }
+
+    /* Making a async request to lastFm Api and setting the state based on the album research*/
     getAlbum = async (albumName: string) => {
-        const data = await axios.get(`http://ws.audioscrobbler.com/2.0/?method=album.search&album=${albumName}&api_key=de4c910b37c6d7dad7b6d6b551a1ded5&format=json`);
-        const album = data.data.results.albummatches.album;
-        
+        const data = await albumService.getAlbumByName(albumName)
+        const album = data.results.albummatches.album;
+       
         this.setState({ album })
     }
+
+    componentDidMount() {
+        this.getAlbum('TRENCH');
+    }
+
     render() {
-        this.getAlbum('ANTI');
-        const { album } = this.state;
-        console.log(album)
+        const {album}: any = this.state
+        
         return (
             <div>
                 <header>
@@ -33,7 +42,7 @@ class Albums extends Component {
 
                 <section className="albums">
                     {
-                        album.map(element => <div>{element.name}</div>)
+                        album.map((element:any,index:number) => <div key={index} className="albums-div"><img className="album-img" src={element.image[0] ? element.image[2]["#text"] : ""}alt={element.name} ></img>{element.name}</div>)
                     }
                 </section>
             </div>
