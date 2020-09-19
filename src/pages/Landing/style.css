@@ -1,4 +1,4 @@
-button {
+.landing-button {
     background:#2F4F4F;
     display: flex;
     align-items: center;
@@ -22,4 +22,27 @@ color: #fdffff;
 
 .buttons {
     display:flex;
+}
+
+.artist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artist-div {
+    flex: 0 1 200px;
+    margin: 10px;
+
+}
+
+.artist-img {
+    width: 23vw;
+    height: 26vh;
+    border-radius: 20px;
+    transition: 0.4s
+}
+
+.artist-img:hover {
+    width: 24vw;
+    height: 30vh;
 }

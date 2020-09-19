@@ -6,15 +6,48 @@
 
 .albums-div {
     flex: 0 1 200px;
-    margin:10px;
+    margin: 10px;
 }
-.album-img{
+
+.album-img {
     width: 23vw;
     height: 26vh;
-    border-radius:20px;
+    border-radius: 20px;
     transition: 0.4s
 }
+
 .album-img:hover {
     width: 24vw;
     height: 30vh;
 }
+.search-form{
+    display:flex;
+    justify-content: center;
+
+    align-items: center;
+}
+.search-button {
+    background: #5f9ea0;
+    border-radius: 13px;
+    height: 2.0rem;
+    width: 9.0rem;
+    cursor:pointer;
+    font-size:14px;
+    font-family: 'Dancing Script', cursive;
+    transition: 0.4s;
+    color:white;
+    border-color: #5F9EA0;
+
+}
+
+
+.search-input{
+    width: 15vw;
+    height: 2.5vh;
+    text-align: center;
+    border-radius:13px
+
+    
+}
+
+
