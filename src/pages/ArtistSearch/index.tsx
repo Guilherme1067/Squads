@@ -72,7 +72,7 @@ class Artist extends Component {
                         <div key={index} className="artist-div">
                             <img 
                              className="artist-img" 
-                             src={element.image && element.image[2]["#text"] != "" ? element.image[2]["#text"] : nonePhotoAvaible} 
+                             src={element.image && element.image[2]["#text"] !== "" ? element.image[2]["#text"] : nonePhotoAvaible} 
                              alt={element.name} ></img>{element.name}
                         </div>)
                     }

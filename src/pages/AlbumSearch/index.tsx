@@ -71,7 +71,7 @@ class Albums extends Component {
                          <div key={index} className="albums-div">
                              <img 
                                 className="album-img" 
-                                src={element.image[0] && element.image[0]["#text"] != "" ? element.image[2]["#text"] : nonePhotoAvaible} 
+                                src={element.image[0] && element.image[0]["#text"] !== "" ? element.image[2]["#text"] : nonePhotoAvaible} 
                                 alt={element.name} ></img>{element.name}
                         </div>)
                     }

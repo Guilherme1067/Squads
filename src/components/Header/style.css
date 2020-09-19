@@ -2,22 +2,21 @@ ul {
     list-style: none;
 }
 
-p {
+ .header-nav p {
     font-family: 'Great Vibes', cursive;
     font-size: 40px;
-    transition: 1s;
     color: #2F4F4F;
 }
 
-p:hover {
-    transform: rotate(5deg);
-    cursor: default;
-    box-shadow: 10px 10px 10px 1px #2F4F4F;
+a {
+    text-decoration: none;
 }
 
 
+
+
 .header-nav-description {
-    margin-right: 10px;
+    margin-right: 1.8rem;
 }
 
 .header nav {
@@ -55,13 +54,32 @@ p:hover {
     color: white;
     background: #2F4F4F;
 }
-.header-menu{
-    display:flex;
+
+.header-menu {
+    display: flex;
     /* justify-content: space-around; */
+    /* align-items: flex-start; */
+    text-decoration: none;
+
 }
 
 .playIcon {
     width: 1.2vw;
     height: 2.8vh;
     color: #FF4500
+}
+
+.search-options {
+    margin: 5rem;
+    cursor: pointer;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    transition: 1s;
+    color: #2F4F4F;
+
+
+
+}
+.search-options:hover{
+    transform: rotate(3deg);
 }

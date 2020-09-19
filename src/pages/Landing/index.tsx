@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
 
 
 import Header from '../../components/Header/index'
@@ -51,7 +50,7 @@ class Landing extends Component {
                         <div key={index} className="artist-div">
                         <img 
                              className="artist-img" 
-                             src={element.image[0] && element.image[0]["#text"] != "" ? element.image[2]["#text"] : nonePhotoAvaible} 
+                             src={element.image[0] && element.image[0]["#text"] !== "" ? element.image[2]["#text"] : nonePhotoAvaible} 
                              alt={element.name} >
                         </img>
                             {element.name}
@@ -65,6 +64,4 @@ class Landing extends Component {
 
     }
 }
-                            // topArtists.map((element: any, index: number) => <div key={index} className="albums-div"><img className="album-img" src={element.image[0] ? element.image[2]["#text"] : nonePhotoAvaible} alt={element.name} ></img>{element.name}</div>)
-
 export default Landing;
