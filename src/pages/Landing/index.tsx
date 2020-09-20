@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 
 import Header from '../../components/Header/index'
@@ -9,56 +9,51 @@ import './style.css'
 
 class Landing extends Component {
 
-    state ={
+    state = {
         topArtists: [
             {
-                name: "" ,
-                image:"",
+                name: "",
+                image: "",
             }
         ]
     }
 
-   
-
     getTopArtistByRegion = async () => {
         const data = await TopArtistService.getTopArtistsByRegion()
-        const topArtists =  data.albums.album;
+        const topArtists = data.albums.album;
 
-        this.setState({topArtists})
+        this.setState({ topArtists })
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.getTopArtistByRegion();
     }
 
-    render(){
+    render() {
 
-        const {topArtists} : any = this.state;
+        const { topArtists }: any = this.state;
         const nonePhotoAvaible: string = 'https://www.protec.com.br/img/fonto-indisponivel.png'
         return (
+            <div>
                 <div>
-
-                <div>
-                <Header />
-
-                {}
-                <div/>
+                    <Header />
+                    <div />
                     <div className='artist'>
                         {
-                        topArtists.map((element: any, index: number) => 
-                        <div key={index} className="artist-div">
-                        <img 
-                             className="artist-img" 
-                             src={element.image[0] && element.image[0]["#text"] !== "" ? element.image[2]["#text"] : nonePhotoAvaible} 
-                             alt={element.name} >
-                        </img>
-                            {element.name}
-                        </div>)
-                    }
+                            topArtists.map((element: any, index: number) =>
+                                <div key={index} className="artist-div">
+                                    <img
+                                        className="artist-img"
+                                        src={element.image[0] && element.image[0]["#text"] !== "" ? element.image[2]["#text"] : nonePhotoAvaible}
+                                        alt={element.name} >
+                                    </img>
+                                    {element.name}
+                                </div>)
+                        }
                     </div>
                 </div>
 
-                </div>
+            </div>
         )
 
     }
