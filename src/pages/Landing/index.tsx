@@ -23,7 +23,6 @@ class Landing extends Component {
     getTopArtistByRegion = async () => {
         const data = await TopArtistService.getTopArtistsByRegion()
         const topArtists =  data.albums.album;
-        console.log('aa',topArtists)
 
         this.setState({topArtists})
     }

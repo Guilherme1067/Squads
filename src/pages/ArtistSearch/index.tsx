@@ -39,10 +39,10 @@ class Artist extends Component {
 
     }
 
-    componentDidMount() {
-        this.getArtist('LIL UZI');
+    // componentDidMount() {
+    //     this.getArtist('LIL UZI');
 
-    }
+    // }
 
     render() {
         const { artist,search }: any = this.state
