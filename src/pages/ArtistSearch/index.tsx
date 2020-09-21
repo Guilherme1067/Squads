@@ -63,7 +63,7 @@ class Artist extends Component {
                 <div className="search-form">
                     <input
                         type="text"
-                        placeholder="Pesquisar"
+                        placeholder="Digite o nome do artista"
                         className="search-input"
                         name="search"
                         value={search}

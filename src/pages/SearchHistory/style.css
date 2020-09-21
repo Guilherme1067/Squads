@@ -5,23 +5,57 @@
 .album-list{
     display:flex;
     justify-content: center;
-}
-.album-list li{
-    display:flex;
-    justify-content:center;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    width:15vw;
+    border-style: groove;
+    border-radius:10px;
 }
 
-.artist-list li{
+.album-list:hover{
+    background-color:aquamarine;
+}
+
+h3{
     display:flex;
-    justify-content:center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size:20px;
+}
+.album-search{
+    /* display: flex; */
+    flex-wrap: wrap;
+    align-items: center;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
-    width:15vw;
+    width:50vw;
+    text-justify: initial;
+}
+
+.artist-search {
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width:50vw;
+    text-justify: initial;
+}
+
+.artist-list{
+    display:flex;
+    justify-content: center;
+    border-style: groove;
+    border-radius:10px;
+}
+
+.artist-list:hover{
+    background-color:aquamarine;
+}
+
+li{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Dancing Script', cursive;
+
 }

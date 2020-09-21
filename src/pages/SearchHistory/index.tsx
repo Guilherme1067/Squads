@@ -16,21 +16,19 @@ function ShowHistory() {
                     <Header />
                 </header>
                 <div className="all-search">
-                <div className="album" >
+                <div className="album-search" >
+                    <h3>Albums</h3>
                     {dataAlbum.map((element: string, index: any) =>
-                        <ul className="album-list" key={index}>
-                            <li>
-                                {element}
-                            </li>
-                        </ul>)}
+                        <li className="album-list" key={index}>
+                            {element}
+                        </li>)}
                 </div>
-                <div className="artist">
+                <div className="artist-search">
+                    <h3>Artistas</h3>
                     {dataArtist.map((element: string, index: any) =>
-                        <ul className="artist-list" key={index}>
-                            <li>
+                        <li className="artist-list" key={index}>
                                 {element}
-                            </li>
-                        </ul>)}
+                        </li>)}
                 </div>
                 </div>
             </div>
