@@ -6,8 +6,6 @@ import StorageReseach from '../../components/StorageSearch';
 
 import './style.css';
 
-// let isThereAlbum = false;
-
 class Albums extends Component {
     state = {
         album: [
@@ -19,12 +17,10 @@ class Albums extends Component {
             },
         ],
         search: "",
-
         isThereAlbum:false
     }
 
     /* Making a async request to lastFm Api and setting the state based on the album research*/
-    
     getAlbum = async (albumName: string) => {
         if(albumName){
             const data = await albumService.getAlbumByName(albumName)
@@ -33,12 +29,10 @@ class Albums extends Component {
             this.saveSearchToStorage(albumName);
 
             this.setState({ album, isThereAlbum:true })
-    
         }
         else {
             return;
         }
-
     }
 
     getInputValue = (event: any) => {

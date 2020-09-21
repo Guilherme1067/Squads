@@ -19,10 +19,8 @@ class Artist extends Component {
             },
         ],
         search: "",
-
         isThereArtist:false,
     }
-
 
     /* Making a async request to lastFm Api and setting the state based on the artist research*/
     getArtist = async (artistName: string) => {
