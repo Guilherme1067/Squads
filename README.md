@@ -2,7 +2,7 @@ Antes de iniciar o projeto execute o comando " npm install " no terminal estando
 
 Para iniciar o Projeto basta executar, no terminal estando na pasta raiz do projeto, o comando:
 
-"yarn start" caso use o yarn ou "npm start", se caso use o npm.
+"yarn start" caso use o yarn ou "npm start", caso use o npm.
 
 Apos o building a aplicação sera executada na porta 3000
 
