@@ -4,14 +4,7 @@ import { Link } from 'react-router-dom';
 import "./style.css"
 
 function StorageReseach() {
-    if(localStorage.length > 0 && localStorage.AlbumSearched) {
-        return (
-            <div>
-                <Link to="/history"><button className="search-history">Consultar Histórico</button></Link>
-            </div>
-        )
-    }
-    else if (localStorage.length > 0 && localStorage.ArtistSearched) {
+    if(localStorage.length > 0 && (localStorage.AlbumSearched || localStorage.ArtistSearched))  {
         return (
             <div>
                 <Link to="/history"><button className="search-history">Consultar Histórico</button></Link>
@@ -24,5 +17,4 @@ function StorageReseach() {
         )
     }
 }
-
 export default StorageReseach;
